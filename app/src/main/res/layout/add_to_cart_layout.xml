@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/colorPrimary"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/imageCartProduct"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:text="@string/app_name"
+                    android:gravity="center"
+                    android:id="@+id/tvCartProductName"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                        android:id="@+id/number_button"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        app:backGroundColor="@color/colorAccent"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+            android:id="@+id/editComment"
+            android:background="@android:color/white"
+            android:hint="Comment"
+            android:layout_margin="8dp"
+            android:lines="1"
+            android:minLines="2"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <ScrollView
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <!-- Group 1 Size of Cup -->
+            <RelativeLayout
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:text="Choose Size"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:background="@drawable/text_round_gray"
+                        android:textColor="@android:color/white"
+                        android:text="REQUIRED"
+                        android:padding="4dp"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_marginBottom="4dp"
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <RadioGroup
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <RadioButton
+                            android:id="@+id/radioSizeM"
+                            android:text="Size M"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                            android:id="@+id/radioSizeL"
+                            android:text="Size L"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            android:id="@+id/tvSizeM"
+                            android:text="+$0"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:id="@+id/tvSizeL"
+                            android:text="+$3"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- Group 2 Sugar -->
+            <RelativeLayout
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:text="Choose Sugar"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:background="@drawable/text_round_gray"
+                        android:textColor="@android:color/white"
+                        android:text="REQUIRED"
+                        android:padding="4dp"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_marginBottom="4dp"
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <RadioGroup
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <RadioButton
+                            android:id="@+id/radioSugar100"
+                            android:text="100%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                            android:id="@+id/radioSugar70"
+                            android:text="70%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                            android:id="@+id/radioSugar50"
+                            android:text="50%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                            android:id="@+id/radioSugar30"
+                            android:text="30%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                            android:id="@+id/radioSugarFree"
+                            android:text="Free"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <!-- Group 3 Ice -->
+            <RelativeLayout
+                    android:layout_marginBottom="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:text="Choose Ice"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <TextView
+                        android:background="@drawable/text_round_gray"
+                        android:textColor="@android:color/white"
+                        android:text="REQUIRED"
+                        android:padding="4dp"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_marginBottom="4dp"
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <RadioGroup
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <RadioButton
+                            android:id="@+id/radioIce100"
+                            android:text="100%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                            android:id="@+id/radioIce70"
+                            android:text="70%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                            android:id="@+id/radioIce50"
+                            android:text="50%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                            android:id="@+id/radioIce30"
+                            android:text="30%"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                            android:id="@+id/radioIceFree"
+                            android:text="Free"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
